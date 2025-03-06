@@ -5,7 +5,7 @@
  */
 function calculateRentalCost(days) {
   const defaultPrice = 40;
-  const firsrDiscountTerm = 3;
+  const firstDiscountTerm = 3;
   const firstDiscount = 20;
   const secondDiscountTerm = 7;
   const secondDiscount = 50;
@@ -14,7 +14,7 @@ function calculateRentalCost(days) {
     return defaultPrice * days - secondDiscount;
   }
 
-  if (days >= firsrDiscountTerm) {
+  if (days >= firstDiscountTerm) {
     return defaultPrice * days - firstDiscount;
   }
 
